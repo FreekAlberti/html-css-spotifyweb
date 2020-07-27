@@ -75,6 +75,7 @@ aside {
 }
 .content {
   margin-top: 80px;
+  padding: 0 15px;
 }
 .content-nav {
   display: flex;
@@ -91,9 +92,21 @@ aside {
   flex-wrap: wrap;
 }
 .box {
+  height: 250px;
+  width: 200px;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.box:hover .copertina{
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.copertina {
   height: 200px;
   width: 200px;
-  background-color: green;
+  background-color: purple;
   border: 1px solid black;
 }
 /* /MAIN CONTENT */
@@ -106,5 +119,8 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* /FOOTER */
