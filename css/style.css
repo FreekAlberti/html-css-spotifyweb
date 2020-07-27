@@ -76,12 +76,23 @@ aside {
 .content {
   margin-top: 80px;
 }
+.content-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.content-nav li {
+  padding: 0 5px;
+}
 .album {
   display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .box {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   background-color: green;
   border: 1px solid black;
 }
