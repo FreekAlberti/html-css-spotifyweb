@@ -31,6 +31,24 @@ a {
 .margin-top-bottom-5 {
   margin: 5px 0;
 }
+.margin-left-right-15 {
+  margin: 0 15px;
+}
+.margin-left-right-10 {
+  margin: 0 10px;
+}
+.margin-top-bottom-20 {
+  margin: 20px 0;
+}
+.margin-top-20-bottom-10 {
+  margin: 20px 0 10px 0;
+}
+.margin-top-bottom-10 {
+  margin: 10px 0;
+}
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
 /* /MIX */
 /* MAIN */
 main {
@@ -58,18 +76,15 @@ aside {
   height: 100%;
   overflow-y: hidden;
 }
-.secondary-menu-title {
-  height: 50px;
-}
 #font-15 {
   font-size: 15px;
 }
-.font-30 {
-  font-size: 30px;
+.font-45 {
+  font-size: 45px;
   vertical-align: middle;
 }
 .playlist {
-  height: calc(100% - 50px);
+  height: calc(100% - 80px);
   overflow-y: auto;
 }
 .aside-bottom {
@@ -85,14 +100,22 @@ aside {
 .aside-bottom h4 {
   display: inline-block;
 }
+.aside-bottom-bottom {
+  display: flex;
+  justify-content: flex-start;
+}
 .cerchietto {
   border: 1px solid gray;
   border-radius: 100%;
   background-color: gray;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 .cerchietto img {
-  height: 15px;
-  width: 15px;
+  max-height: 100%;
 }
 /* /ASIDE */
 /* MAIN CONTENT */
@@ -130,7 +153,7 @@ aside {
   text-decoration: none;
 }
 .content {
-  margin-top: 85px;
+  margin-top: 90px;
   padding: 0 15px;
 }
 .content-nav {
@@ -159,11 +182,11 @@ aside {
 .box {
   height: 250px;
   width: 200px;
-  margin: 0 5px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-right: 10px;
 }
 .box:hover .selezionato{
   background-color: rgba(0, 0, 0, 0.5);
@@ -171,9 +194,12 @@ aside {
   justify-content: center;
   align-items: center;
 }
+.box p {
+  color: #616161;
+}
 .copertina {
-  height: 200px;
-  width: 200px;
+  width: 100%;
+  height: 100%;
   background-image: url(../img/the-eminem-show.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -185,6 +211,10 @@ aside {
 }
 .selezionato i {
   font-size: 40px;
+}
+.copertina-circolare {
+  border-radius: 100%;
+  overflow: hidden;
 }
 /* /MAIN CONTENT */
 /* /MAIN */
@@ -216,6 +246,18 @@ footer {
 .player-superiore {
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  height: 30px;
+}
+.player-superiore i:hover {
+  font-size: 25px;
+}
+.icon-bigger {
+  font-size: 25px;
+}
+.player-superiore .icon-bigger:hover {
+  font-size: 35px;
 }
 .player-inferiore {
   display: flex;
@@ -223,16 +265,17 @@ footer {
   align-items: center;
 }
 .lunghezza-traccia {
-  height: 2px;
+  height: 3px;
   width: 60%;
   background-color: gray;
   border-radius: 15px;
 }
 .momento-traccia, .livello-volume {
-  height: 2px;
+  height: 3px;
   width: 15%;
   background-color: lightgray;
   border-radius: 15px;
+  position: relative;
 }
 .impostazioni {
   display: flex;
@@ -242,9 +285,26 @@ footer {
   justify-content: flex-end;
 }
 .lunghezza-volume {
-  height: 2px;
+  height: 3px;
   width: 15%;
   background-color: gray;
   border-radius: 15px;
+}
+.lunghezza-traccia:hover .momento-traccia, .lunghezza-volume:hover .livello-volume {
+  background-color: green;
+}
+.lunghezza-traccia:hover .pallino, .lunghezza-volume:hover .pallino {
+  display: inline-block;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: -10px;
+}
+.pallino {
+  display: none;
+  height: 10px;
+  width: 10px;
+  background-color: lightgray;
+  border-radius: 100%;
 }
 /* /FOOTER */
