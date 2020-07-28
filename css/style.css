@@ -205,9 +205,13 @@ footer {
 .album-selezionato {
   display: flex;
   align-items: center;
+  width: calc(100% / 3);
 }
 .album-selezionato img {
   height: 45px;
+}
+.gestione-traccia {
+  width: calc(100% / 3);
 }
 .player-superiore {
   display: flex;
@@ -215,11 +219,12 @@ footer {
 }
 .player-inferiore {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .lunghezza-traccia {
   height: 2px;
-  width: 300px;
+  width: 60%;
   background-color: gray;
   border-radius: 15px;
 }
@@ -232,10 +237,13 @@ footer {
 .impostazioni {
   display: flex;
   align-items: center;
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: flex-end;
 }
 .lunghezza-volume {
   height: 2px;
-  width: 60px;
+  width: 15%;
   background-color: gray;
   border-radius: 15px;
 }
