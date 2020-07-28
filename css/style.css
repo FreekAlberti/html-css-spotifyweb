@@ -115,7 +115,10 @@ aside {
   font-size: 13px;
 }
 .content-nav li:hover a {
-    color: #fff;
+  color: #fff;
+}
+.content-nav li::after {
+  content:
 }
 .album {
   display: flex;
@@ -165,5 +168,12 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.album-selezionato {
+  display: flex;
+  align-items: center;
+}
+.album-selezionato img {
+  height: 45px;
 }
 /* /FOOTER */
