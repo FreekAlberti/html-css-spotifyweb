@@ -35,6 +35,15 @@ aside {
 }
 .main-menu-elements img {
   height: 30px;
+  vertical-align: middle;
+}
+.main-menu-elements a {
+  font-size: 13px;
+  font-weight: bold;
+  color: #616161;
+}
+.main-menu-elements:hover a {
+  color: #fff;
 }
 .secondary-menu {
   height: 100%;
@@ -87,7 +96,7 @@ aside {
   text-decoration: none;
 }
 .content {
-  margin-top: 80px;
+  margin-top: 85px;
   padding: 0 15px;
 }
 .content-nav {
@@ -99,6 +108,14 @@ aside {
 .content-nav li {
   padding: 0 5px;
   text-transform: uppercase;
+}
+.content-nav li a {
+  color: #616161;
+  font-weight: bold;
+  font-size: 13px;
+}
+.content-nav li:hover a {
+    color: #fff;
 }
 .album {
   display: flex;
