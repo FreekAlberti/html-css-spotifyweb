@@ -14,6 +14,17 @@
 .no-a-style {
   text-decoration: none;
 }
+a {
+  text-decoration: none;
+}
+.font-spoty-gray {
+  color: #616161;
+  font-weight: bold;
+  font-size: 13px;
+}
+.font-hover-white:hover a {
+  color: #fff;
+}
 /* /MIX */
 /* MAIN */
 main {
@@ -33,17 +44,9 @@ aside {
 .logo {
   max-width: 65%;
 }
-.main-menu-elements img {
+.height-30 {
   height: 30px;
   vertical-align: middle;
-}
-.main-menu-elements a {
-  font-size: 13px;
-  font-weight: bold;
-  color: #616161;
-}
-.main-menu-elements:hover a {
-  color: #fff;
 }
 .secondary-menu {
   height: 100%;
@@ -51,6 +54,13 @@ aside {
 }
 .secondary-menu-title {
   height: 50px;
+}
+#font-15 {
+  font-size: 15px;
+}
+.font-30 {
+  font-size: 30px;
+  vertical-align: middle;
 }
 .playlist {
   height: calc(100% - 50px);
@@ -82,7 +92,6 @@ aside {
 }
 .btn {
   color: white;
-  text-decoration: none;
   border: 1px solid white;
   border-radius: 50px;
   padding: 10px 20px;
@@ -108,14 +117,6 @@ aside {
 .content-nav li {
   padding: 0 5px;
   text-transform: uppercase;
-}
-.content-nav li a {
-  color: #616161;
-  font-weight: bold;
-  font-size: 13px;
-}
-.content-nav li:hover a {
-  color: #fff;
 }
 .activate::after {
   content: "";
