@@ -25,6 +25,9 @@ a {
 .font-hover-white:hover a {
   color: #fff;
 }
+.gray {
+  color: #616161;
+}
 /* /MIX */
 /* MAIN */
 main {
@@ -68,6 +71,25 @@ aside {
 }
 .aside-bottom {
   margin-top: auto;
+}
+.height-14 {
+  height: 14px;
+  vertical-align: middle;
+}
+.aside-bottom p {
+  display: inline-block;
+}
+.aside-bottom h4 {
+  display: inline-block;
+}
+.cerchietto {
+  border: 1px solid gray;
+  border-radius: 100%;
+  background-color: gray;
+}
+.cerchietto img {
+  height: 15px;
+  width: 15px;
 }
 /* /ASIDE */
 /* MAIN CONTENT */
@@ -174,6 +196,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #fff;
+  padding: 10px;
 }
 .album-selezionato {
   display: flex;
@@ -181,5 +205,35 @@ footer {
 }
 .album-selezionato img {
   height: 45px;
+}
+.player-superiore {
+  display: flex;
+  justify-content: center;
+}
+.player-inferiore {
+  display: flex;
+  align-items: center;
+}
+.lunghezza-traccia {
+  height: 2px;
+  width: 300px;
+  background-color: gray;
+  border-radius: 15px;
+}
+.momento-traccia, .livello-volume {
+  height: 2px;
+  width: 15%;
+  background-color: lightgray;
+  border-radius: 15px;
+}
+.impostazioni {
+  display: flex;
+  align-items: center;
+}
+.lunghezza-volume {
+  height: 2px;
+  width: 60px;
+  background-color: gray;
+  border-radius: 15px;
 }
 /* /FOOTER */
