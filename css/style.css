@@ -117,8 +117,13 @@ aside {
 .content-nav li:hover a {
   color: #fff;
 }
-.content-nav li::after {
-  content:
+.activate::after {
+  content: "";
+  height: 2px;
+  width: 50%;
+  background-color: green;
+  display: block;
+  margin: auto;
 }
 .album {
   display: flex;
