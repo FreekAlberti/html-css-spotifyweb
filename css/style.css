@@ -8,6 +8,12 @@
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
 }
+.list-style {
+  list-style: none;
+}
+.no-a-style {
+  text-decoration: none;
+}
 /* /MIX */
 /* MAIN */
 main {
@@ -22,6 +28,13 @@ aside {
   display: flex;
   flex-direction: column;
   color: #fff;
+  padding: 20px;
+}
+.logo {
+  max-width: 65%;
+}
+.main-menu-elements img {
+  height: 30px;
 }
 .secondary-menu {
   height: 100%;
@@ -85,6 +98,7 @@ aside {
 }
 .content-nav li {
   padding: 0 5px;
+  text-transform: uppercase;
 }
 .album {
   display: flex;
@@ -100,14 +114,26 @@ aside {
   flex-direction: column;
   align-items: center;
 }
-.box:hover .copertina{
-  background-color: rgba(255, 0, 0, 0.5);
+.box:hover .selezionato{
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .copertina {
   height: 200px;
   width: 200px;
-  background-color: purple;
-  border: 1px solid black;
+  background-image: url(../img/the-eminem-show.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.selezionato {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.selezionato i {
+  font-size: 40px;
 }
 /* /MAIN CONTENT */
 /* /MAIN */
