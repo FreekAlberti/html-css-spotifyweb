@@ -123,6 +123,7 @@ aside {
   display: flex;
   justify-content: center;
   overflow: hidden;
+  margin-right: 5px;
 }
 .cerchietto img {
   max-height: 100%;
@@ -214,6 +215,11 @@ aside {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.titolo-autore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .selezionato {
   height: 100%;
   width: 100%;
@@ -249,6 +255,11 @@ footer {
 }
 .album-selezionato img {
   height: 45px;
+}
+.folder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .gestione-traccia {
   width: calc(100% / 3);
@@ -341,6 +352,9 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  .cerchietto {
+      margin-right: 0;
+  }
   /* /ASIDE RESPONSIVE */
   /* MAIN CONTENT RESPONSIVE */
   .main-content {
@@ -349,7 +363,27 @@ footer {
   .upgrade {
     width: calc(100% - 50px);
   }
+  .box {
+    height: 200px;
+  }
+  .titolo-autore {
+    display: none;
+  }
   /* /MAIN CONTENT RESPONSIVE */
+
+  /* FOOTER RESPONSIVE */
+  footer .margin-left-right-15 {
+    margin: 0 10px;
+  }
+  footer .margin-left-right-10 {
+    margin: 0 5px;
+  }
+  .folder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* /FOOTER RESPONSIVE */
 
 }
 /* /RESPONSIVE */
