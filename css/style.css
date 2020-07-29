@@ -49,6 +49,9 @@ a {
 .margin-bottom-20 {
   margin-bottom: 20px;
 }
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
 /* /MIX */
 /* MAIN */
 main {
@@ -64,9 +67,13 @@ aside {
   flex-direction: column;
   color: #fff;
   padding: 20px;
+  overflow: hidden;
 }
 .visualizzazione-piccola {
   display: none;
+}
+.visualizzazione-grande {
+  height: 100%;
 }
 .logo {
   max-width: 65%;
@@ -76,7 +83,7 @@ aside {
   vertical-align: middle;
 }
 .secondary-menu {
-  height: 100%;
+  height: calc(100% - 210px);
   overflow-y: hidden;
 }
 #font-15 {
@@ -317,14 +324,14 @@ footer {
   /* ASIDE RESPONSIVE */
   aside {
     width: 50px;
-    padding: 0;
+    padding: 5px;
   }
   .visualizzazione-grande {
     display: none;
   }
   .visualizzazione-piccola {
+    height: 100%;
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
   }
